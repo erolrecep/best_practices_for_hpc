@@ -77,3 +77,4 @@ apps/_hpc/best_practices_for_hpc/
 - **GitHub**: [github.com/erolrecep](https://github.com/erolrecep)
 - **Website**: [erolrecep.github.io](https://erolrecep.github.io)
 - **CRC Portal**: [researchcomputing.rice.edu](https://researchcomputing.rice.edu)
+

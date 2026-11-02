@@ -79,3 +79,4 @@ export-pdf: ## Guide on how to export presentation to PDF format
 clean: ## Remove temporary build files
 	@find . -type f -name "*~" -delete
 	@echo -e "$(GREEN)✅ Clean completed.$(RESET)"
+
