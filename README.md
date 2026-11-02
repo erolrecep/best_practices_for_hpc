@@ -33,10 +33,9 @@ apps/_hpc/best_practices_for_hpc/
 ├── index.html                     # Main Reveal.js presentation (16 interactive slides)
 ├── Makefile                       # Single-file management console (make slides, check, export-pdf)
 ├── README.md                      # Comprehensive workshop guide and repository overview
+├── LICENSE                        # MIT License
+├── blog_post.md                   # Full publication-ready technical blog post
 ├── about_me.html                  # Modular presenter bio snippet (from VibeCoding-Workshop)
-├── best_practices_HPC.md          # Raw outline, topics, and pedagogical storyboard
-├── blog_post_template.md          # Workshop abstract draft
-├── blog_post_template_v2.md       # Full publication-ready technical blog post
 ├── images/
 │   └── avatar.jpeg                # Presenter portrait for profile cards
 └── SLURM_scripts/                 # Concrete side-by-side Slurm comparisons
