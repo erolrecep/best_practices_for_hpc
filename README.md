@@ -1,13 +1,12 @@
 # Best Practices for Using HPC: Scaling Up to Cluster-Native Workflows
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Python-3.13-blue.svg?logo=python&logoColor=white" alt="Python">
-  <img src="https://img.shields.io/badge/Build-Make-orange.svg?logo=gnu&logoColor=white" alt="Make">
-  <img src="https://img.shields.io/badge/Env-uv%20%7C%20mamba-success.svg" alt="Environment">
-  <img src="https://img.shields.io/badge/HPC-SLURM_Ready-blueviolet.svg" alt="HPC">
   <a href="https://erolrecep.github.io/best-practices-hpc/"><img src="https://img.shields.io/badge/Slides-Reveal.js-38bdf8.svg?logo=revealdotjs&logoColor=white" alt="Interactive Slides"></a>
-  <img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License">
+  <img src="https://img.shields.io/badge/HPC-SLURM_Ready-blueviolet.svg" alt="HPC">
+  <img src="https://img.shields.io/badge/Containers-Apptainer-purple.svg" alt="Apptainer">
+  <img src="https://img.shields.io/badge/Build-Make-orange.svg?logo=gnu&logoColor=white" alt="Make">
   <a href="https://erolrecep.github.io/posts/best-practices-for-hpc/"><img src="https://img.shields.io/badge/Blog-erolrecep.github.io-red.svg" alt="Blog"></a>
+  <img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License">
 </p>
 
 > **Live Links & Quick Navigation:**
