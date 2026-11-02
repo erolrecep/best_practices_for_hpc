@@ -1,9 +1,14 @@
 # Best Practices for Using HPC: Scaling Up to Cluster-Native Workflows
 
-[![Interactive Presentation](https://img.shields.io/badge/📊_Live_Presentation-erolrecep.github.io%2Fbest--practices--hpc%2F-38bdf8?style=for-the-badge)](https://erolrecep.github.io/best-practices-hpc/)
-[![Technical Blog Post](https://img.shields.io/badge/📝_Read_Blog_Post-erolrecep.github.io%2Fposts-34d399?style=for-the-badge)](https://erolrecep.github.io/posts/best-practices-for-hpc/)
-[![Author Profile](https://img.shields.io/badge/👨‍💻_Author-Recep_Erol,_PhD-a855f7?style=for-the-badge)](https://erolrecep.github.io/)
-[![Affiliation](https://img.shields.io/badge/🏛️_Affiliation-Rice_University_CRC-fbbf24?style=for-the-badge)](https://researchcomputing.rice.edu/)
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.13-blue.svg?logo=python&logoColor=white" alt="Python">
+  <img src="https://img.shields.io/badge/Build-Make-orange.svg?logo=gnu&logoColor=white" alt="Make">
+  <img src="https://img.shields.io/badge/Env-uv%20%7C%20mamba-success.svg" alt="Environment">
+  <img src="https://img.shields.io/badge/HPC-SLURM_Ready-blueviolet.svg" alt="HPC">
+  <a href="https://erolrecep.github.io/best-practices-hpc/"><img src="https://img.shields.io/badge/Slides-Reveal.js-38bdf8.svg?logo=revealdotjs&logoColor=white" alt="Interactive Slides"></a>
+  <img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License">
+  <a href="https://erolrecep.github.io/posts/best-practices-for-hpc/"><img src="https://img.shields.io/badge/Blog-erolrecep.github.io-red.svg" alt="Blog"></a>
+</p>
 
 > **Live Links & Quick Navigation:**
 > - 🖥️ **Interactive Slide Deck**: [https://erolrecep.github.io/best-practices-hpc/](https://erolrecep.github.io/best-practices-hpc/)
