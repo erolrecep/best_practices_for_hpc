@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Best Practices for Using RANGE</title>
+  <meta name="description" content="Rice CRC HPC Workshop">
+  <meta name="author" content="Recep Erol, PhD">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reset.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/theme/black.min.css" id="theme">
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+      <!-- Slide 1: Title -->
+      <section>
+        <h1>Best Practices for Using RANGE</h1>
+        <h3>Scaling Up to Cluster-Native Workflows</h3>
+        <p>Rice University Center for Research Computing (CRC)</p>
+      </section>
+
+      <!-- Slide 2: About Me -->
+      <section>
+        <h2>About Me</h2>
+        <p><strong>Recep Erol, PhD</strong></p>
+        <ul>
+          <li>HPC Engineer specializing in hardware-accelerated computing.</li>
+          <li>Expertise in large-scale system optimization.</li>
+          <li>Helping you bridge the gap between local code and cluster efficiency.</li>
+        </ul>
+      </section>
+
+      <!-- Slide 3: Agenda -->
+      <section>
+        <h2>Agenda</h2>
+        <ul>
+          <li>The Mindset Shift: PC vs. HPC</li>
+          <li>Data Transfer & Interactive vs. Batch Environments</li>
+          <li>Structuring Reproducible Workflows (Containers!)</li>
+          <li>Resource Allocation & Hardware Acceleration</li>
+          <li>Storage Hygiene & Job Profiling</li>
+          <li>Collaborating with CRC</li>
+        </ul>
+      </section>
+
+      <!-- Slide 4: Getting In & Moving Data -->
+      <section>
+        <h2>Getting In & Moving Data</h2>
+        <ul>
+          <li><strong>SSH vs OpenOnDemand:</strong> Terminal access vs web-based GUI.</li>
+          <li><strong>The Rule:</strong> Never run heavy compute on login nodes!</li>
+          <li><strong>Moving Multi-TB Data:</strong> 
+            <ul>
+              <li>Rsync: Good for small/medium syncs.</li>
+              <li>Globus: Essential for large-scale transfers.</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Slide 5: Interactive vs. Batch Environments -->
+      <section>
+        <h2>Interactive vs. Batch</h2>
+        <ul>
+          <li><strong>Interactive (salloc, OOD):</strong> Best for debugging, exploratory data analysis.</li>
+          <li><strong>Batch (sbatch):</strong> The engine of HPC. Automated, unattended runs.</li>
+        </ul>
+        <p style="color:#ffcc00;">HPC is an orchestrated ecosystem, not just a bigger laptop.</p>
+      </section>
+
+      <!-- Slide 6: Scientific Workflows & Containers -->
+      <section>
+        <h2>Reproducible Workflows</h2>
+        <ul>
+          <li>Automate builds/runs using <strong>Makefile</strong> or <strong>CMake</strong>.</li>
+          <li><strong>Containerization:</strong> Use Apptainer/Singularity.</li>
+          <li>Don't rely on hidden local dependencies. Package everything.</li>
+          <li><em>Test locally, deploy identical container on RANGE.</em></li>
+        </ul>
+      </section>
+
+      <!-- Slide 7: Resource Allocation -->
+      <section>
+        <h2>Resource Allocation Pitfalls</h2>
+        <ul>
+          <li><strong>The 128GB vs 16GB Trap:</strong> Requesting max memory inflates queue time.</li>
+          <li><strong>The "One-by-One" Trap:</strong> Running 1,000 simulations sequentially?</li>
+          <li><strong>Solution:</strong> Slurm Job Arrays. Run concurrently!</li>
+        </ul>
+      </section>
+
+      <!-- Slide 8: Hardware Acceleration -->
+      <section>
+        <h2>Hardware Acceleration on RANGE</h2>
+        <ul>
+          <li>RANGE features NVIDIA H100 and H200 GPUs.</li>
+          <li><strong>Common Error:</strong> Requesting 4 GPUs (<code>--gres=gpu:4</code>) for a single-GPU script.</li>
+          <li>Verify utilization using <code>nvtop</code> or <code>nvidia-smi</code>.</li>
+        </ul>
+      </section>
+
+      <!-- Slide 9: Storage Hygiene -->
+      <section>
+        <h2>Storage & I/O Hygiene</h2>
+        <ul>
+          <li><strong>Scratch is for Compute:</strong> Use high-performance VAST storage for fast I/O.</li>
+          <li>It is <strong>not</strong> a permanent lab archive.</li>
+          <li>Clean up intermediate files post-job.</li>
+        </ul>
+      </section>
+
+      <!-- Slide 10: Monitoring & Profiling -->
+      <section>
+        <h2>Monitoring & Profiling</h2>
+        <ul>
+          <li>Profile locally or on a small subset first.</li>
+          <li>Review historical job data (<code>seff <jobid></code>) to refine requests.</li>
+        </ul>
+      </section>
+
+      <!-- Slide 11: CRC Partnership -->
+      <section>
+        <h2>Collaborating with CRC</h2>
+        <ul>
+          <li>We are your research partners, not just a helpdesk.</li>
+          <li>Engage us during experimental design.</li>
+          <li><strong>Open Office Hours:</strong> Tuesdays 10 AM-12 PM & 1 PM-3 PM.</li>
+        </ul>
+      </section>
+
+      <!-- Slide 12: Q&A -->
+      <section>
+        <h2>Questions?</h2>
+        <p>Thank you for attending.</p>
+        <p>crc@rice.edu | researchcomputing.rice.edu</p>
+      </section>
+
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.js"></script>
+  <script>
+    Reveal.initialize();
+  </script>
+</body>
+</html>
