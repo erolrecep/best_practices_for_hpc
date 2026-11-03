@@ -34,7 +34,6 @@ apps/_hpc/best_practices_for_hpc/
 ├── Makefile                       # Single-file management console (make slides, check, export-pdf)
 ├── README.md                      # Comprehensive workshop guide and repository overview
 ├── LICENSE                        # MIT License
-├── blog_post.md                   # Full publication-ready technical blog post
 ├── about_me.html                  # Modular presenter bio snippet (from VibeCoding-Workshop)
 ├── images/
 │   └── avatar.jpeg                # Presenter portrait for profile cards
