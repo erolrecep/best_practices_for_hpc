@@ -51,6 +51,7 @@ check: ## Verify that presentation assets, images, and SLURM scripts exist
 	@echo -e "$(CYAN)--- Verifying Workshop Assets ---$(RESET)"
 	@test -f index.html && echo -e "  $(GREEN)[✓] index.html (Reveal.js slides)$(RESET)" || (echo "  [✗] index.html missing"; exit 1)
 	@test -f images/avatar.jpeg && echo -e "  $(GREEN)[✓] images/avatar.jpeg (Profile portrait)$(RESET)" || (echo "  [✗] avatar.jpeg missing"; exit 1)
+	@test -f images/consult_qr.svg && echo -e "  $(GREEN)[✓] images/consult_qr.svg (Consultation QR code)$(RESET)" || (echo "  [✗] consult_qr.svg missing"; exit 1)
 	@test -f about_me.html && echo -e "  $(GREEN)[✓] about_me.html (Modular bio snippet)$(RESET)" || (echo "  [✗] about_me.html missing"; exit 1)
 	@echo -e "$(CYAN)--- Verifying SLURM Comparison Scripts ---$(RESET)"
 	@for f in SLURM_scripts/*.sh; do \
