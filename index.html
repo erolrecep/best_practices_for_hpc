@@ -537,8 +537,32 @@
     }
 
     section.slide-cover p,
-    section.slide-closing p {
+    section.slide-closing > .slide-wrapper > p,
+    section.slide-closing > p {
       color: #FFFFFF !important;
+    }
+
+    section.slide-closing .rice-card,
+    section.slide-closing .bio-container {
+      color: var(--text-main) !important;
+    }
+
+    section.slide-closing .rice-card p,
+    section.slide-closing .bio-container p {
+      color: var(--text-main) !important;
+    }
+
+    section.slide-closing .rice-card p.consult-subtitle {
+      color: var(--rice-slate) !important;
+    }
+
+    section.slide-closing .rice-card h3,
+    section.slide-closing .bio-container h3 {
+      color: var(--rice-blue) !important;
+    }
+
+    section.slide-closing .bio-role {
+      color: var(--rice-slate) !important;
     }
 
     /* Accessible Motion Sensitivity (WCAG 2.2.2 & 2.3.3) */
@@ -1423,7 +1447,7 @@ Memory Efficiency: 88.8% of 16.00 GB</code></pre>
                   width="120" height="120" style="width: 120px; height: 120px; display: block;" />
               </div>
               <h3 style="font-size: 0.82em; margin: 0 0 4px 0; color: var(--rice-blue);">Consult with Recep</h3>
-              <p style="font-size: 0.50em; color: var(--rice-slate); margin: 0 0 12px 0; font-weight: 600;">
+              <p class="consult-subtitle" style="font-size: 0.50em; color: var(--rice-slate); margin: 0 0 12px 0; font-weight: 600;">
                 1-on-1 HPC & AI Consultation Booking
               </p>
               <a href="https://calendar.app.google/riPATTce6ZBbuJNR6" target="_blank" rel="noopener noreferrer"
