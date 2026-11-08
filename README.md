@@ -110,9 +110,19 @@ The presentation in [`index.html`](file:///Users/erolrecep/Developer/codebase/ap
 
 ---
 
-## 6. Local Quickstart & Makefile Commands
+## 6. Getting Started & Local Quickstart
 
-A unified [`Makefile`](file:///Users/erolrecep/Developer/codebase/apps/_hpc/best_practices_for_hpc/Makefile) manages presentation serving and verification:
+### 1. Clone the Repository
+```bash
+# Clone the repository
+git clone https://github.com/erolrecep/best_practices_for_hpc.git
+
+# Navigate into the project directory
+cd best_practices_for_hpc
+```
+
+### 2. Turnkey Makefile Commands
+A unified [`Makefile`](Makefile) manages presentation serving and verification:
 
 ```bash
 # Display interactive command menu (default)
